@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;}
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4><b>Lerp Color</b></h4>
+      <p>Blends two colors to find a third color somewhere between them.
+         The amt parameter is the amount to interpolate between the two values where 0.0 equal to the first color, 0.1 is very near the first color,
+          0.5 is halfway in between, etc. An amount below 0 will be treated as 0. Likewise, amounts above 1 will be capped at 1.
+          This is different from the behavior of lerp(),
+         but necessary because otherwise numbers outside the range will produce strange and unexpected colors.
+The way that colors are interpolated depends on the current color mode. </p>
+    </div>
+
+    <div class="col-sm-9">
+      <h4><small>Interactive Work</small></h4>
+      <hr>
+      <iframe src="Exercise 05 - LerpColour within row/index.html" frameborder="0" scrolling="no"
+       style="height: 500px; width: 500px; float: left;" height="100%" width="49%" align="left">
+      </iframe>
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+<footer class="container-fluid">
+  <p>Adam Rossiter 2020</p>
+</footer>
+
+</body>
+</html>

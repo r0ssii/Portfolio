@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;}
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4><b>aTan2</b></h4>
+      <p>For this work we were learning how to use a new function.<br>
+        Calculates the angle (in radians) from a specified point to the coordinate origin as measured from the positive x-axis.
+        Values are returned as a float in the range from PI to -PI if the angleMode is RADIANS or 180 to -180 if the angleMode is DEGREES.
+        The atan2() function is most often used for orienting geometry to the position of the cursor. </p>
+    </div>
+
+    <div class="col-sm-9">
+      <h4><small>Interactive Work</small></h4>
+      <hr>
+      <iframe src="Exercise 06 - aTan2/index.html" frameborder="0" scrolling="no"
+       style="height: 500px; width: 500px; float: left;" height="100%" width="49%" align="left">
+     </iframe>
+
+            </div>
+          </div>
+        </div>
+
+
+<footer class="container-fluid">
+  <p>Adam Rossiter 2020</p>
+</footer>
+
+</body>
+</html>
